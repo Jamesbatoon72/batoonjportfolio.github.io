@@ -4,23 +4,156 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portfolio</title>
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-body{background:#f4f4f4;color:#333}
-nav{background:#222;color:#fff;padding:15px 30px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0}
-nav ul{list-style:none;display:flex}
-nav ul li{margin-left:20px}
-nav ul li a{text-decoration:none;color:#fff;font-weight:bold}
-nav ul li a:hover{color:#00adb5}
-.section{padding:60px 20px;text-align:center}
-.section img{width:200px;height:200px;object-fit:cover;border-radius:10px;margin:20px 0}
-.home{background:#00adb5;color:#fff;height:90vh;display:flex;flex-direction:column;justify-content:center;align-items:center}
-.home span{color:#222}
-.list{list-style:none;margin-top:20px}
-.list li{margin:10px 0}
-footer{background:#222;color:#fff;text-align:center;padding:15px}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+    line-height:1.6
+}
+
+nav{
+    background:#222;
+    color:#fff;
+    padding:15px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap
+}
+
+nav h2{
+    font-size:1.5rem
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:10px
+}
+
+nav ul li{
+    margin:8px 15px
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#fff;
+    font-weight:bold
+}
+
+nav ul li a:hover{
+    color:#00adb5
+}
+
+.section{
+    padding:60px 20px;
+    text-align:center;
+    max-width:1000px;
+    margin:auto
+}
+
+.section h2{
+    font-size:2rem;
+    margin-bottom:15px
+}
+
+.section p{
+    max-width:800px;
+    margin:auto
+}
+
+.section img{
+    width:100%;
+    max-width:220px;
+    height:auto;
+    object-fit:cover;
+    border-radius:10px;
+    margin:20px auto;
+    display:block
+}
+
+.home{
+    background:#00adb5;
+    color:#fff;
+    min-height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px
+}
+
+.home h1{
+    font-size:2.5rem
+}
+
+.home span{
+    color:#222
+}
+
+.list{
+    list-style:none;
+    margin-top:20px
+}
+
+.list li{
+    margin:8px 0;
+    font-size:1.1rem
+}
+
+footer{
+    background:#222;
+    color:#fff;
+    text-align:center;
+    padding:15px;
+    font-size:0.9rem
+}
+
+@media (max-width:768px){
+    nav{
+        flex-direction:column;
+        text-align:center
+    }
+
+    nav ul{
+        flex-direction:column
+    }
+
+    nav ul li{
+        margin:10px 0
+    }
+
+    .home h1{
+        font-size:2rem
+    }
+
+    .section h2{
+        font-size:1.7rem
+    }
+}
+
+@media (min-width:1200px){
+    .section{
+        padding:80px 20px
+    }
+
+    .home h1{
+        font-size:3rem
+    }
+}
 </style>
 </head>
+
 <body>
 
 <nav>
@@ -43,13 +176,16 @@ footer{background:#222;color:#fff;text-align:center;padding:15px}
 <section id="about" class="section">
 <h2>About Me</h2>
 <img src="https://github.com/Jamesbatoon72/batoonjportfolio.github.io/blob/9eb30b7e86f8ace6a19fa08fa41bc96244f410ef/about.jpg?raw=true" alt="About Me Image">
-<p>I am James A. Batoon. I live in Brgy. Libertad, Ormoc City, Leyte, Philippines. I am 19 years old and currently a second-year college student at Eastern Visayas State University, taking up a Bachelor of Science in Information Technology.</p>
+<p>
+I am James A. Batoon. I live in Brgy. Libertad, Ormoc City, Leyte, Philippines.
+I am 19 years old and currently a second-year college student at
+Eastern Visayas State University, taking up a Bachelor of Science in Information Technology.
+</p>
 </section>
 
 <section id="hobbies" class="section">
 <h2>Hobbies</h2>
-<img src="https://github.com/Jamesbatoon72/batoonjportfolio.github.io/blob/main/hobby.jfif?raw=true"
- alt="Hobbies Image">
+<img src="https://github.com/Jamesbatoon72/batoonjportfolio.github.io/blob/main/hobby.jfif?raw=true" alt="Hobbies Image">
 <ul class="list">
 <li>Playing mobile games</li>
 <li>Listening to music</li>
@@ -57,7 +193,7 @@ footer{background:#222;color:#fff;text-align:center;padding:15px}
 <li>Exercising</li>
 </ul>
 </section>
- 
+
 <section id="skills" class="section">
 <h2>Skills</h2>
 <img src="https://github.com/Jamesbatoon72/batoonjportfolio.github.io/blob/d89752c0307a8dd6a9ba03f706a3222d1de0a569/skills.jfif?raw=true" alt="Skills Image">
