@@ -4,166 +4,48 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portfolio</title>
-
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif
-}
-
-body{
-    background:#f4f4f4;
-    color:#333;
-    line-height:1.6
-}
-
-nav{
-    background:#222;
-    color:#fff;
-    padding:15px 20px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    flex-wrap:wrap
-}
-
-nav h2{
-    font-size:1.5rem
-}
-
-nav ul{
-    list-style:none;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    margin-top:10px
-}
-
-nav ul li{
-    margin:8px 15px
-}
-
-nav ul li a{
-    text-decoration:none;
-    color:#fff;
-    font-weight:bold
-}
-
-nav ul li a:hover{
-    color:#00adb5
-}
-
-.section{
-    padding:60px 20px;
-    text-align:center;
-    max-width:1000px;
-    margin:auto
-}
-
-.section h2{
-    font-size:2rem;
-    margin-bottom:15px
-}
-
-.section p{
-    max-width:800px;
-    margin:auto
-}
-
-.section img{
-    width:100%;
-    max-width:220px;
-    height:auto;
-    object-fit:cover;
-    border-radius:10px;
-    margin:20px auto;
-    display:block
-}
-
-.home{
-    background:#00adb5;
-    color:#fff;
-    min-height:90vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    padding:40px 20px
-}
-
-.home h1{
-    font-size:2.5rem
-}
-
-.home span{
-    color:#222
-}
-
-.list{
-    list-style:none;
-    margin-top:20px
-}
-
-.list li{
-    margin:8px 0;
-    font-size:1.1rem
-}
-
-footer{
-    background:#222;
-    color:#fff;
-    text-align:center;
-    padding:15px;
-    font-size:0.9rem
-}
-
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#f4f4f4;color:#333;line-height:1.6}
+nav{background:#222;color:#fff;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;position:sticky;top:0;z-index:1000}
+nav h2{font-size:1.5rem}
+nav ul{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;margin-top:10px}
+nav ul li{margin:8px 15px}
+nav ul li a{text-decoration:none;color:#fff;font-weight:bold;transition:color 0.2s; -webkit-tap-highlight-color: transparent;}
+nav ul li a:hover, nav ul li a.active{color:#00adb5; outline:none;}
+.section{padding:60px 20px;text-align:center;max-width:1000px;margin:auto}
+.section h2{font-size:2rem;margin-bottom:15px}
+.section p{max-width:800px;margin:auto}
+.section img{width:100%;max-width:220px;height:auto;object-fit:cover;border-radius:10px;margin:20px auto;display:block}
+.home{background:#00adb5;color:#fff;min-height:90vh;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:40px 20px}
+.home h1{font-size:2.5rem}
+.home span{color:#222}
+.list{list-style:none;margin-top:20px}
+.list li{margin:8px 0;font-size:1.1rem}
+footer{background:#222;color:#fff;text-align:center;padding:15px;font-size:0.9rem}
 @media (max-width:768px){
-    nav{
-        flex-direction:column;
-        text-align:center
-    }
-
-    nav ul{
-        flex-direction:column
-    }
-
-    nav ul li{
-        margin:10px 0
-    }
-
-    .home h1{
-        font-size:2rem
-    }
-
-    .section h2{
-        font-size:1.7rem
-    }
+    nav{flex-direction:column;text-align:center}
+    nav ul{flex-direction:column}
+    nav ul li{margin:10px 0}
+    .home h1{font-size:2rem}
+    .section h2{font-size:1.7rem}
 }
-
 @media (min-width:1200px){
-    .section{
-        padding:80px 20px
-    }
-
-    .home h1{
-        font-size:3rem
-    }
+    .section{padding:80px 20px}
+    .home h1{font-size:3rem}
 }
 </style>
 </head>
-
 <body>
 
 <nav>
 <h2>MyPortfolio</h2>
 <ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About Me</a></li>
-<li><a href="#hobbies">Hobbies</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#contact">Contacts</a></li>
+<li><a href="#home" class="nav-link">Home</a></li>
+<li><a href="#about" class="nav-link">About Me</a></li>
+<li><a href="#hobbies" class="nav-link">Hobbies</a></li>
+<li><a href="#skills" class="nav-link">Skills</a></li>
+<li><a href="#contact" class="nav-link">Contacts</a></li>
 </ul>
 </nav>
 
@@ -176,11 +58,7 @@ footer{
 <section id="about" class="section">
 <h2>About Me</h2>
 <img src="https://github.com/Jamesbatoon72/batoonjportfolio.github.io/blob/9eb30b7e86f8ace6a19fa08fa41bc96244f410ef/about.jpg?raw=true" alt="About Me Image">
-<p>
-I am James A. Batoon. I live in Brgy. Libertad, Ormoc City, Leyte, Philippines.
-I am 19 years old and currently a second-year college student at
-Eastern Visayas State University, taking up a Bachelor of Science in Information Technology.
-</p>
+<p>I am James A. Batoon. I live in Brgy. Libertad, Ormoc City, Leyte, Philippines. I am 19 years old and currently a second-year college student at Eastern Visayas State University, taking up a Bachelor of Science in Information Technology.</p>
 </section>
 
 <section id="hobbies" class="section">
@@ -215,6 +93,30 @@ Eastern Visayas State University, taking up a Bachelor of Science in Information
 <footer>
 <p>© 2025 My Portfolio</p>
 </footer>
+
+<script>
+// Highlight nav tab when section is active
+const sections = document.querySelectorAll('.section');
+const navLinks = document.querySelectorAll('.nav-link');
+
+function setActiveTab() {
+  let index = sections.length;
+
+  while(--index && window.scrollY + 50 < sections[index].offsetTop) {} // offset for sticky nav
+
+  navLinks.forEach(link => link.classList.remove('active'));
+  navLinks[index].classList.add('active');
+}
+
+setActiveTab();
+window.addEventListener('scroll', setActiveTab);
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.forEach(l => l.classList.remove('active'));
+    link.classList.add('active');
+  });
+});
+</script>
 
 </body>
 </html>
